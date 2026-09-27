@@ -121,7 +121,7 @@
   <data name="Panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABVYAAAMACAIAAABAXKuVAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAA/7JJREFUeF7s/fWTm2eev4ufv+B7qk59Pzt2S2ruFjczo6QmMUvNzMwoZqZmRrvd
+        vQAADr0BR/uQrQAA/7JJREFUeF7s/fWTm2eev4ufv+B7qk59Pzt2S2ruFjczo6QmMUvNzMwoZqZmRrvd
         ZnYcJ44ZwszMMLMDmcT2nLqfRy3Lbie7O2dnN6lS1VUqSd1O4vzwVL2u+/V+3/9XZVZQZVZQVWZQdVZw
         dVZQdVZgTVZgbXZgbXZAfVZAQ3ZgU5Z/S3ZAa3Zge05gR15QZ35wDym0lxzWSw4ZKgofLUHDjFExY1TM
         OA0LM0bFjJagR4rDR4rDh4vChgpDBwtCBgpD+gqCeykhPeTQHnJoFymkMz+4Mz+4PTewLSfATW5g6y4t
@@ -14846,7 +14846,7 @@
         AGJzPuWUMO+9AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="logopctbox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Guna2CirclePictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAB9AAAAfQCAYAAACaOMR5AAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
         /XeY3HW5P/7Pu8zMZtNJSEIwBAgCERCk945UAaXYUDwgKMJRFBQF9YAIgqIUERAVpIkg0jwgSC9SEkGk

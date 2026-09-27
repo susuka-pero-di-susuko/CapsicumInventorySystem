@@ -39,11 +39,16 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub usernametxtbx_TextChanged(sender As Object, e As EventArgs) Handles usernametxtbx.TextChanged
+    Private Sub usernametxtbx_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub passwordtxtbx_TextChanged(sender As Object, e As EventArgs) Handles passwordtxtbx.TextChanged
+    Private Sub passwordtxtbx_TextChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub showpasschcbx_CheckedChanged(sender As Object, e As EventArgs) Handles showpasschcbx.CheckedChanged
+
         If showpasschcbx.Checked = True Then
             passwordtxtbx.PasswordChar = ""
         Else
@@ -52,7 +57,11 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub showpasschcbx_CheckedChanged(sender As Object, e As EventArgs) Handles showpasschcbx.CheckedChanged
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub Guna2TextBox1_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
 End Class
