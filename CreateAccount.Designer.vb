@@ -24,7 +24,7 @@ Partial Class CreateAccount
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CreateAccount))
         Me.registerpanel = New System.Windows.Forms.Panel()
-        Me.Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
+        Me.birthdatetimepicker = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.loginlinklb = New System.Windows.Forms.LinkLabel()
         Me.registerbttn = New Guna.UI2.WinForms.Guna2Button()
         Me.genderlb = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -46,7 +46,7 @@ Partial Class CreateAccount
         Me.registerpanel.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.registerpanel.BackgroundImage = CType(resources.GetObject("registerpanel.BackgroundImage"), System.Drawing.Image)
         Me.registerpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.registerpanel.Controls.Add(Me.Guna2DateTimePicker1)
+        Me.registerpanel.Controls.Add(Me.birthdatetimepicker)
         Me.registerpanel.Controls.Add(Me.loginlinklb)
         Me.registerpanel.Controls.Add(Me.registerbttn)
         Me.registerpanel.Controls.Add(Me.genderlb)
@@ -66,22 +66,22 @@ Partial Class CreateAccount
         Me.registerpanel.Size = New System.Drawing.Size(700, 458)
         Me.registerpanel.TabIndex = 12
         '
-        'Guna2DateTimePicker1
+        'birthdatetimepicker
         '
-        Me.Guna2DateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Guna2DateTimePicker1.AutoRoundedCorners = True
-        Me.Guna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2DateTimePicker1.Checked = True
-        Me.Guna2DateTimePicker1.FillColor = System.Drawing.Color.White
-        Me.Guna2DateTimePicker1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.Guna2DateTimePicker1.Location = New System.Drawing.Point(143, 271)
-        Me.Guna2DateTimePicker1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Me.Guna2DateTimePicker1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Me.Guna2DateTimePicker1.Name = "Guna2DateTimePicker1"
-        Me.Guna2DateTimePicker1.Size = New System.Drawing.Size(223, 36)
-        Me.Guna2DateTimePicker1.TabIndex = 18
-        Me.Guna2DateTimePicker1.Value = New Date(2026, 9, 29, 16, 45, 21, 942)
+        Me.birthdatetimepicker.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.birthdatetimepicker.AutoRoundedCorners = True
+        Me.birthdatetimepicker.BackColor = System.Drawing.Color.Transparent
+        Me.birthdatetimepicker.Checked = True
+        Me.birthdatetimepicker.FillColor = System.Drawing.Color.White
+        Me.birthdatetimepicker.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.birthdatetimepicker.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
+        Me.birthdatetimepicker.Location = New System.Drawing.Point(143, 271)
+        Me.birthdatetimepicker.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
+        Me.birthdatetimepicker.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
+        Me.birthdatetimepicker.Name = "birthdatetimepicker"
+        Me.birthdatetimepicker.Size = New System.Drawing.Size(223, 36)
+        Me.birthdatetimepicker.TabIndex = 18
+        Me.birthdatetimepicker.Value = New Date(2026, 9, 29, 16, 45, 21, 942)
         '
         'loginlinklb
         '
@@ -359,5 +359,5 @@ Partial Class CreateAccount
     Friend WithEvents gendercmbbx As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents registerbttn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents loginlinklb As LinkLabel
-    Friend WithEvents Guna2DateTimePicker1 As Guna.UI2.WinForms.Guna2DateTimePicker
+    Friend WithEvents birthdatetimepicker As Guna.UI2.WinForms.Guna2DateTimePicker
 End Class

@@ -1,4 +1,5 @@
-﻿Imports System.Text.RegularExpressions
+﻿Imports System.Data.SqlClient
+Imports System.Text.RegularExpressions
 
 Public Class loginform
 
@@ -22,32 +23,52 @@ Public Class loginform
     Private Sub loginbttn_Click_1(sender As Object, e As EventArgs) Handles loginbttn.Click
 
         If usernametxtbx.Text = "" AndAlso passwordtxtbx.Text = "" Then
-            MsgBox("Username and Password cannot be blank")
+            MsgBox("Username and Password cannot be blank", MsgBoxStyle.Critical)
+            Return
         ElseIf usernametxtbx.Text = "" Then
-            MsgBox("Username cannot be blank")
+            MsgBox("Username cannot be blank", MsgBoxStyle.Critical)
+            Return
         ElseIf passwordtxtbx.Text = "" Then
-            MsgBox("Password cannot be blank")
-        ElseIf usernametxtbx.Text.Length < 6 AndAlso
-            passwordtxtbx.Text.Length < 6 Then
-            MsgBox("Atleast have 6 characters")
-
+            MsgBox("Password cannot be blank", MsgBoxStyle.Critical)
+            Return
         End If
 
 
-        If Regex.IsMatch(usernametxtbx.Text, "[A-Z]") AndAlso
-          Regex.IsMatch(usernametxtbx.Text, "[0-9]") AndAlso
-          Regex.IsMatch(usernametxtbx.Text, ".{6}") AndAlso
-          Regex.IsMatch(passwordtxtbx.Text, "[A-Z]") AndAlso
-          Regex.IsMatch(passwordtxtbx.Text, "[0-9]") Then
+        Try
+            connect()
+            If sqlconn.State = ConnectionState.Closed Then sqlconn.Open()
 
-            MsgBox("Login successfully")
-        Else
-            MessageBox.Show("Invalid username or password. Please ensure that both the username and password contain at least one uppercase letter, one number, and are at least 8 characters long.", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End If
+            query = "SELECT * FROM USER_ACCOUNT WHERE username=@username AND password=@password"
+            cmd = New SqlCommand(query, sqlconn)
+            cmd.Parameters.AddWithValue("@username", usernametxtbx.Text.Trim())
+            cmd.Parameters.AddWithValue("@password", passwordtxtbx.Text)
+
+            Dim dr As SqlDataReader = cmd.ExecuteReader()
+
+            If dr.HasRows Then
+                MsgBox("Login successfully", MsgBoxStyle.Information)
+
+            Else
+                MessageBox.Show("Invalid username or password.", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+            dr.Close()
+
+        Catch ex As Exception
+            MessageBox.Show("Error: " & ex.Message)
+        Finally
+            sqlconn.Close()
+        End Try
+
     End Sub
 
     Private Sub createaccntlinklb_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles createaccntlinklb.LinkClicked
-        CreateAccount.Show() 'show create account form'
-        Me.Hide() 'purpose is to hide the login form'
+        CreateAccount.Show()
+        Me.Hide()
+    End Sub
+
+
+
+    Private Sub systemtitlelb_Click(sender As Object, e As EventArgs) Handles systemtitlelb.Click
+
     End Sub
 End Class

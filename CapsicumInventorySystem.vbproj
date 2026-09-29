@@ -79,6 +79,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="connection.vb" />
     <Compile Include="CreateAccount.Designer.vb">
       <DependentUpon>CreateAccount.vb</DependentUpon>
     </Compile>
