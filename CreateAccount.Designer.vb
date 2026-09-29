@@ -23,8 +23,8 @@ Partial Class CreateAccount
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CreateAccount))
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.registerpanel = New System.Windows.Forms.Panel()
+        Me.Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.loginlinklb = New System.Windows.Forms.LinkLabel()
         Me.registerbttn = New Guna.UI2.WinForms.Guna2Button()
         Me.genderlb = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -38,25 +38,12 @@ Partial Class CreateAccount
         Me.lastnametxtbx = New Guna.UI2.WinForms.Guna2TextBox()
         Me.fnametxtbx = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Registerlb = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.registerpanel.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Arial", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Transparent
-        Me.Label1.Location = New System.Drawing.Point(22, 343)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(192, 16)
-        Me.Label1.TabIndex = 10
-        Me.Label1.Text = "Already have an account ?"
-        '
         'registerpanel
         '
+        Me.registerpanel.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.registerpanel.BackgroundImage = CType(resources.GetObject("registerpanel.BackgroundImage"), System.Drawing.Image)
         Me.registerpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.registerpanel.Controls.Add(Me.Guna2DateTimePicker1)
@@ -73,17 +60,33 @@ Partial Class CreateAccount
         Me.registerpanel.Controls.Add(Me.lastnametxtbx)
         Me.registerpanel.Controls.Add(Me.fnametxtbx)
         Me.registerpanel.Controls.Add(Me.Registerlb)
-        Me.registerpanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.registerpanel.Location = New System.Drawing.Point(0, 0)
         Me.registerpanel.Margin = New System.Windows.Forms.Padding(2)
-        Me.registerpanel.MaximumSize = New System.Drawing.Size(700, 458)
         Me.registerpanel.Name = "registerpanel"
         Me.registerpanel.Size = New System.Drawing.Size(700, 458)
         Me.registerpanel.TabIndex = 12
         '
+        'Guna2DateTimePicker1
+        '
+        Me.Guna2DateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Guna2DateTimePicker1.AutoRoundedCorners = True
+        Me.Guna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2DateTimePicker1.Checked = True
+        Me.Guna2DateTimePicker1.FillColor = System.Drawing.Color.White
+        Me.Guna2DateTimePicker1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
+        Me.Guna2DateTimePicker1.Location = New System.Drawing.Point(143, 271)
+        Me.Guna2DateTimePicker1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
+        Me.Guna2DateTimePicker1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
+        Me.Guna2DateTimePicker1.Name = "Guna2DateTimePicker1"
+        Me.Guna2DateTimePicker1.Size = New System.Drawing.Size(223, 36)
+        Me.Guna2DateTimePicker1.TabIndex = 18
+        Me.Guna2DateTimePicker1.Value = New Date(2026, 9, 29, 16, 45, 21, 942)
+        '
         'loginlinklb
         '
         Me.loginlinklb.ActiveLinkColor = System.Drawing.Color.LightGray
+        Me.loginlinklb.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.loginlinklb.AutoSize = True
         Me.loginlinklb.BackColor = System.Drawing.Color.Transparent
         Me.loginlinklb.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -98,6 +101,7 @@ Partial Class CreateAccount
         '
         'registerbttn
         '
+        Me.registerbttn.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.registerbttn.AutoRoundedCorners = True
         Me.registerbttn.BackColor = System.Drawing.Color.Transparent
         Me.registerbttn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
@@ -116,6 +120,7 @@ Partial Class CreateAccount
         '
         'genderlb
         '
+        Me.genderlb.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.genderlb.BackColor = System.Drawing.Color.Transparent
         Me.genderlb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.genderlb.Font = New System.Drawing.Font("Times New Roman", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -129,6 +134,7 @@ Partial Class CreateAccount
         '
         'gendercmbbx
         '
+        Me.gendercmbbx.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.gendercmbbx.AutoRoundedCorners = True
         Me.gendercmbbx.BackColor = System.Drawing.Color.Transparent
         Me.gendercmbbx.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
@@ -147,6 +153,7 @@ Partial Class CreateAccount
         '
         'birthdatelb
         '
+        Me.birthdatelb.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.birthdatelb.BackColor = System.Drawing.Color.Transparent
         Me.birthdatelb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.birthdatelb.Font = New System.Drawing.Font("Times New Roman", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -160,6 +167,7 @@ Partial Class CreateAccount
         '
         'usertypelb
         '
+        Me.usertypelb.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.usertypelb.BackColor = System.Drawing.Color.Transparent
         Me.usertypelb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.usertypelb.Font = New System.Drawing.Font("Times New Roman", 9.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -173,6 +181,7 @@ Partial Class CreateAccount
         '
         'usetypecmbbx
         '
+        Me.usetypecmbbx.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.usetypecmbbx.AutoRoundedCorners = True
         Me.usetypecmbbx.BackColor = System.Drawing.Color.Transparent
         Me.usetypecmbbx.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
@@ -191,6 +200,7 @@ Partial Class CreateAccount
         '
         'confirmpasswtxtbx
         '
+        Me.confirmpasswtxtbx.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.confirmpasswtxtbx.AutoRoundedCorners = True
         Me.confirmpasswtxtbx.BackColor = System.Drawing.Color.Transparent
         Me.confirmpasswtxtbx.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -213,6 +223,7 @@ Partial Class CreateAccount
         '
         'passwtxtbx
         '
+        Me.passwtxtbx.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.passwtxtbx.AutoRoundedCorners = True
         Me.passwtxtbx.BackColor = System.Drawing.Color.Transparent
         Me.passwtxtbx.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -235,6 +246,7 @@ Partial Class CreateAccount
         '
         'usernametxtbx
         '
+        Me.usernametxtbx.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.usernametxtbx.AutoRoundedCorners = True
         Me.usernametxtbx.BackColor = System.Drawing.Color.Transparent
         Me.usernametxtbx.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -257,6 +269,7 @@ Partial Class CreateAccount
         '
         'lastnametxtbx
         '
+        Me.lastnametxtbx.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.lastnametxtbx.AutoRoundedCorners = True
         Me.lastnametxtbx.BackColor = System.Drawing.Color.Transparent
         Me.lastnametxtbx.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -279,6 +292,7 @@ Partial Class CreateAccount
         '
         'fnametxtbx
         '
+        Me.fnametxtbx.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.fnametxtbx.AutoRoundedCorners = True
         Me.fnametxtbx.BackColor = System.Drawing.Color.Transparent
         Me.fnametxtbx.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -301,54 +315,36 @@ Partial Class CreateAccount
         '
         'Registerlb
         '
+        Me.Registerlb.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Registerlb.BackColor = System.Drawing.Color.Transparent
         Me.Registerlb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Registerlb.Font = New System.Drawing.Font("Times New Roman", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Registerlb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Registerlb.Location = New System.Drawing.Point(271, 49)
+        Me.Registerlb.Location = New System.Drawing.Point(271, 57)
         Me.Registerlb.Margin = New System.Windows.Forms.Padding(2)
         Me.Registerlb.Name = "Registerlb"
         Me.Registerlb.Size = New System.Drawing.Size(157, 26)
         Me.Registerlb.TabIndex = 1
         Me.Registerlb.Text = "Register Account"
         '
-        'Guna2DateTimePicker1
-        '
-        Me.Guna2DateTimePicker1.AutoRoundedCorners = True
-        Me.Guna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2DateTimePicker1.Checked = True
-        Me.Guna2DateTimePicker1.FillColor = System.Drawing.Color.White
-        Me.Guna2DateTimePicker1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.Guna2DateTimePicker1.Location = New System.Drawing.Point(143, 271)
-        Me.Guna2DateTimePicker1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Me.Guna2DateTimePicker1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Me.Guna2DateTimePicker1.Name = "Guna2DateTimePicker1"
-        Me.Guna2DateTimePicker1.Size = New System.Drawing.Size(223, 36)
-        Me.Guna2DateTimePicker1.TabIndex = 18
-        Me.Guna2DateTimePicker1.Value = New Date(2026, 9, 29, 16, 45, 21, 942)
-        '
         'CreateAccount
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(700, 458)
         Me.Controls.Add(Me.registerpanel)
-        Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(2)
-        Me.MaximumSize = New System.Drawing.Size(716, 497)
         Me.Name = "CreateAccount"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "CreateAccount"
         Me.registerpanel.ResumeLayout(False)
         Me.registerpanel.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label1 As Label
     Friend WithEvents registerpanel As Panel
     Friend WithEvents fnametxtbx As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Registerlb As Guna.UI2.WinForms.Guna2HtmlLabel
