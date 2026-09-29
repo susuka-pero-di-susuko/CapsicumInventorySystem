@@ -25,6 +25,7 @@ Partial Class CreateAccount
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CreateAccount))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.registerpanel = New System.Windows.Forms.Panel()
+        Me.Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.loginlinklb = New System.Windows.Forms.LinkLabel()
         Me.registerbttn = New Guna.UI2.WinForms.Guna2Button()
         Me.genderlb = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -38,7 +39,6 @@ Partial Class CreateAccount
         Me.lastnametxtbx = New Guna.UI2.WinForms.Guna2TextBox()
         Me.fnametxtbx = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Registerlb = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.registerpanel.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -80,6 +80,22 @@ Partial Class CreateAccount
         Me.registerpanel.Name = "registerpanel"
         Me.registerpanel.Size = New System.Drawing.Size(700, 458)
         Me.registerpanel.TabIndex = 12
+        '
+        'Guna2DateTimePicker1
+        '
+        Me.Guna2DateTimePicker1.AutoRoundedCorners = True
+        Me.Guna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2DateTimePicker1.Checked = True
+        Me.Guna2DateTimePicker1.FillColor = System.Drawing.Color.White
+        Me.Guna2DateTimePicker1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
+        Me.Guna2DateTimePicker1.Location = New System.Drawing.Point(143, 271)
+        Me.Guna2DateTimePicker1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
+        Me.Guna2DateTimePicker1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
+        Me.Guna2DateTimePicker1.Name = "Guna2DateTimePicker1"
+        Me.Guna2DateTimePicker1.Size = New System.Drawing.Size(223, 36)
+        Me.Guna2DateTimePicker1.TabIndex = 18
+        Me.Guna2DateTimePicker1.Value = New Date(2026, 9, 29, 16, 45, 21, 942)
         '
         'loginlinklb
         '
@@ -311,22 +327,6 @@ Partial Class CreateAccount
         Me.Registerlb.Size = New System.Drawing.Size(157, 26)
         Me.Registerlb.TabIndex = 1
         Me.Registerlb.Text = "Register Account"
-        '
-        'Guna2DateTimePicker1
-        '
-        Me.Guna2DateTimePicker1.AutoRoundedCorners = True
-        Me.Guna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2DateTimePicker1.Checked = True
-        Me.Guna2DateTimePicker1.FillColor = System.Drawing.Color.White
-        Me.Guna2DateTimePicker1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.Guna2DateTimePicker1.Location = New System.Drawing.Point(143, 271)
-        Me.Guna2DateTimePicker1.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Me.Guna2DateTimePicker1.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Me.Guna2DateTimePicker1.Name = "Guna2DateTimePicker1"
-        Me.Guna2DateTimePicker1.Size = New System.Drawing.Size(223, 36)
-        Me.Guna2DateTimePicker1.TabIndex = 18
-        Me.Guna2DateTimePicker1.Value = New Date(2026, 9, 29, 16, 45, 21, 942)
         '
         'CreateAccount
         '
