@@ -1,18 +1,25 @@
 ﻿Imports System.Text.RegularExpressions
 
-Public Class Form1
+Public Class loginform
+
+
+
+
+    Private Sub showpasschcbx_CheckedChanged(sender As Object, e As EventArgs) Handles showpasschcbx.CheckedChanged
+
+        If showpasschcbx.Checked = True Then
+            passwordtxtbx.PasswordChar = ""
+        Else
+            passwordtxtbx.PasswordChar = "*"
+
+        End If
+    End Sub
 
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-
-
-    Private Sub loginbttn_Click(sender As Object, e As EventArgs)
+    Private Sub loginbttn_Click_1(sender As Object, e As EventArgs) Handles loginbttn.Click
 
         If usernametxtbx.Text = "" AndAlso passwordtxtbx.Text = "" Then
             MsgBox("Username and Password cannot be blank")
@@ -39,29 +46,8 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub usernametxtbx_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub passwordtxtbx_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub showpasschcbx_CheckedChanged(sender As Object, e As EventArgs) Handles showpasschcbx.CheckedChanged
-
-        If showpasschcbx.Checked = True Then
-            passwordtxtbx.PasswordChar = ""
-        Else
-            passwordtxtbx.PasswordChar = "*"
-
-        End If
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
-    End Sub
-
-    Private Sub Guna2TextBox1_TextChanged(sender As Object, e As EventArgs)
-
+    Private Sub createaccntlinklb_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles createaccntlinklb.LinkClicked
+        CreateAccount.Show() 'show create account form'
+        Me.Hide() 'purpose is to hide the login form'
     End Sub
 End Class
