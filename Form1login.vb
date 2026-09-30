@@ -48,17 +48,11 @@ Public Class loginform
             If dr.HasRows Then
                 MsgBox("Login successfully", MsgBoxStyle.Information)
 
+                MsgBox("Login successfully")
             Else
-                MessageBox.Show("Invalid username or password.", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("Invalid username or password. Please ensure that both the username and password contain at least one uppercase letter,
+            one number, and are at least 8 characters long.", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
-            dr.Close()
-
-        Catch ex As Exception
-            MessageBox.Show("Error: " & ex.Message)
-        Finally
-            sqlconn.Close()
-        End Try
-
     End Sub
 
     Private Sub createaccntlinklb_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles createaccntlinklb.LinkClicked
