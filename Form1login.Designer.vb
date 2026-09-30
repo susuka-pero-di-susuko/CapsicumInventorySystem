@@ -56,7 +56,7 @@ Partial Class loginform
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.ForeColor = System.Drawing.Color.White
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(701, 343)
         Me.Panel1.TabIndex = 0
@@ -96,7 +96,7 @@ Partial Class loginform
         Me.usernametxtbx.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.usernametxtbx.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.usernametxtbx.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.usernametxtbx.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.usernametxtbx.Font = New System.Drawing.Font("Times New Roman", 9.0!)
         Me.usernametxtbx.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.usernametxtbx.IconRight = CType(resources.GetObject("usernametxtbx.IconRight"), System.Drawing.Image)
         Me.usernametxtbx.IconRightSize = New System.Drawing.Size(30, 30)
@@ -128,7 +128,7 @@ Partial Class loginform
         Me.Guna2CirclePictureBox1.FillColor = System.Drawing.Color.Transparent
         Me.Guna2CirclePictureBox1.ImageRotate = 0!
         Me.Guna2CirclePictureBox1.Location = New System.Drawing.Point(473, 8)
-        Me.Guna2CirclePictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2CirclePictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2CirclePictureBox1.Name = "Guna2CirclePictureBox1"
         Me.Guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.Guna2CirclePictureBox1.Size = New System.Drawing.Size(106, 86)
@@ -147,7 +147,7 @@ Partial Class loginform
         Me.showpasschcbx.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.showpasschcbx.Font = New System.Drawing.Font("Arial", 8.0!, System.Drawing.FontStyle.Bold)
         Me.showpasschcbx.Location = New System.Drawing.Point(406, 215)
-        Me.showpasschcbx.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.showpasschcbx.Margin = New System.Windows.Forms.Padding(2)
         Me.showpasschcbx.Name = "showpasschcbx"
         Me.showpasschcbx.Size = New System.Drawing.Size(116, 18)
         Me.showpasschcbx.TabIndex = 11
@@ -171,7 +171,7 @@ Partial Class loginform
         Me.loginbttn.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.loginbttn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.loginbttn.Location = New System.Drawing.Point(473, 247)
-        Me.loginbttn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.loginbttn.Margin = New System.Windows.Forms.Padding(2)
         Me.loginbttn.Name = "loginbttn"
         Me.loginbttn.Size = New System.Drawing.Size(106, 29)
         Me.loginbttn.TabIndex = 8
@@ -241,7 +241,7 @@ Partial Class loginform
         Me.ClientSize = New System.Drawing.Size(701, 343)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximumSize = New System.Drawing.Size(721, 393)
         Me.Name = "loginform"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
