@@ -24,7 +24,7 @@ Partial Class CreateAccount
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CreateAccount))
         Me.registerpanel = New System.Windows.Forms.Panel()
-        Me.Guna2DateTimePicker1 = New Guna.UI2.WinForms.Guna2DateTimePicker()
+        Me.birthdatetimepicker = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.loginlinklb = New System.Windows.Forms.LinkLabel()
         Me.registerbttn = New Guna.UI2.WinForms.Guna2Button()
         Me.gendercmbbx = New Guna.UI2.WinForms.Guna2ComboBox()
@@ -66,7 +66,7 @@ Partial Class CreateAccount
         Me.registerpanel.Size = New System.Drawing.Size(1050, 705)
         Me.registerpanel.TabIndex = 12
         '
-        'Guna2DateTimePicker1
+        'birthdatetimepicker
         '
         Me.Guna2DateTimePicker1.AutoRoundedCorners = True
         Me.Guna2DateTimePicker1.BorderColor = System.Drawing.Color.Transparent
